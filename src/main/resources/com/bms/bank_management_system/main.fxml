@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="590.0" prefWidth="949.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bms.bank_management_system.Main">
+   <children>
+      <MenuBar layoutY="1.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                <MenuItem fx:id="loanMenu" mnemonicParsing="false" onAction="#setLoanMenu" text="Apply For Loan" />
+                  <MenuItem fx:id="accountMenu" mnemonicParsing="false" onAction="#setAccountMenu" text="Apply For Account" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Transaction">
+               <items>
+                  <MenuItem fx:id="depositMenu" mnemonicParsing="false" onAction="#setDepositMenu" text="Deposit" />
+                  <MenuItem fx:id="withdrawMenu" mnemonicParsing="false" onAction="#setWithdrawMenu" text="Withdraw" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Fund Transfer">
+               <items>
+                  <MenuItem fx:id="transferMenu" mnemonicParsing="false" onAction="#setTransferMenu" text="Account To Account" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Balance">
+               <items>
+                  <MenuItem fx:id="savingsMenu" mnemonicParsing="false" onAction="#setSavingsMenu" text="Check Account Balance" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Account">
+               <items>
+                  <MenuItem fx:id="logOutMenu" mnemonicParsing="false" text="Log Out" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

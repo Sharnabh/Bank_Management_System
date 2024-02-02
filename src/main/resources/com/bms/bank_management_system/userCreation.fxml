@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="436.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bms.bank_management_system.UserCreation">
+   <children>
+      <Label layoutX="40.0" layoutY="49.0" text="First Name" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="88.0" text="Last Name" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="129.0" text="Email" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="172.0" text="Password" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="217.0" text="Confirm Password" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="259.0" text="Set Pin" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="304.0" text="Confirm Pin" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fnameField" layoutX="217.0" layoutY="50.0" prefHeight="26.0" prefWidth="324.0" />
+      <TextField fx:id="lnameField" layoutX="217.0" layoutY="89.0" prefHeight="26.0" prefWidth="324.0" />
+      <TextField fx:id="emailField" layoutX="217.0" layoutY="130.0" prefHeight="26.0" prefWidth="324.0" />
+      <PasswordField fx:id="passField" layoutX="217.0" layoutY="173.0" prefHeight="26.0" prefWidth="324.0" />
+      <PasswordField fx:id="cpassField" layoutX="217.0" layoutY="218.0" prefHeight="26.0" prefWidth="324.0" />
+      <PasswordField fx:id="pinField" layoutX="217.0" layoutY="260.0" />
+      <PasswordField fx:id="cpinField" layoutX="217.0" layoutY="305.0" />
+      <Button fx:id="regBtn" layoutX="274.0" layoutY="362.0" mnemonicParsing="false" onAction="#setRegBtn" text="Register" />
+      <Button fx:id="toLoginBtn" layoutX="224.0" layoutY="396.0" mnemonicParsing="false" onAction="#setToLoginBtn" text="Already have an Account?" />
+   </children>
+</AnchorPane>
